@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+   font-size: 16px;
+   font-family: 'Alkatra', cursive;
+   font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#4E6E81;
+}
+
+.container{  
+    width: 70%;
+    height: 70%; 
+    overflow-y: auto;
+    background-color: #f6bd60;
+    border-radius: 10px;
+}
+
+.header{
+    background-color: #2E3840;
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.add-task-field{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#add-task{
+    width: 95%;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.add-button{
+    padding: 8px;
+    background-color: #3A98B9;
+    color: #fff;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.empty-field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tasks-header{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #277BC0;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.filter-text{
+    margin-right: 10px;  
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+}
+
+.clear-button{
+    background-color: #FF0303;
+    color: #fff;
+    padding: 5px; 
+    border: 0;
+    border-radius: 5px;
+}
+
+.task-field{
+    width: 70%;
+    margin: auto;
+    border-bottom:2px solid #277BC0;
+    border-left:2px solid #277BC0;
+    border-right:2px solid #277BC0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.checked{
+    text-decoration: line-through;
+}
+
+.selected-title{
+    color: black;
+}
+
+input#add-task{font-family:inherit; font-size: 16px;}
+
+button.add-button{font-family: inherit; font-size: 16px;}
+
+button.clear-button{font-family: inherit; font-size: 16px;}
+
+.icons{
+    color: black;
+}
+
+.fa-solid{
+    margin-left: 10px;
+}
+
+.justify-content{
+    display: flex;
+    justify-content: center;
+}
+
+.hide{
+    display: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 776px) {
+
+    .container, .add-task-field, .task-field, .tasks-header{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .add-task-field, .task-field, .tasks-header{
+        width: 85%;
+    }
+
+}
